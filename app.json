@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "StateShift Breathwork",
+    "slug": "stateshift-breathwork",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stateshift.breathwork",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "StateShift needs access to read your health data to track breathing sessions and heart rate variability.",
+        "NSHealthUpdateUsageDescription": "StateShift needs permission to save breathing session data to Apple Health.",
+        "NSMotionUsageDescription": "StateShift uses device motion for enhanced biofeedback during sessions."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.stateshift.breathwork",
+      "permissions": [
+        "ACTIVITY_RECOGNITION",
+        "BODY_SENSORS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-av",
+      "expo-sensors"
+    ]
+  }
+}
